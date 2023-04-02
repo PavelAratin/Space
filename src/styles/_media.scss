@@ -1,0 +1,177 @@
+@media screen and (max-width:1930px){
+  .page-text__technology-imgbox{
+    position: static;
+    top: 0;
+    left: 0;
+    margin-left: auto;
+  }
+}
+@media screen and (max-width:1200px) {
+  .page-text--home,
+  .page-text--destination,
+  .page-text--crew{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top: 200px;
+    .page-text__description{
+      margin-bottom: 154px;
+      &--destination{
+        margin: 0;
+        margin-bottom: 49px;
+        max-width: 570px;
+      }
+      &--crew{
+        margin-right: 0;
+        margin-bottom: 40px;
+        max-width: 100%;
+      }
+    }
+  }
+  .page-text--crew{
+    top: 1px;
+  }
+  .page-text--technology{
+    top: 200px;
+    flex-direction: column;
+    padding-top: 360px;
+    .page-text__description{
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+  .page-text__subtitle--technology,
+  .title--technology{
+    text-align: center;
+  }
+  .page-text__technology-imgbox{
+    margin: 0;
+    order: -1;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    img{
+      width: 100%;
+      object-fit: cover;
+      height: 310px;
+    }
+  }
+  .page-text__img-box{
+    img{
+      width: 453px;
+      height: 532px;
+    }
+  }
+  .page-text__img-box-planet{
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .page-text__subtitle--home{
+    margin-bottom: 24px;  
+  }
+  .title--home{
+    margin-bottom: 54px;
+  }
+  .title--destination{
+    font-size: 80px;
+    margin-bottom: 30px;  
+  }
+  .page-text__img-box-planet{
+    margin-right: 0;
+    margin-bottom: 53px;
+  }
+  .technology-list{
+    margin-bottom: 44px;
+    margin-right: 0;
+    flex-direction: row;
+    &__item:not(:last-child){
+      margin-bottom: 0;
+      margin-right: 16px;
+    }
+  }
+  .list-tab-nav,
+  .planet-description-list,
+  .button-nav-list,
+  .technology-list{
+    justify-content: center;
+  }
+  .desctop-menu{
+    display: none;
+  }
+  .header::after{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+}
+@media screen and (max-width:800px){
+  .title--home{
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+  .page-text--home{
+    .page-text__description{
+      margin-bottom: 81px;
+    }
+  }
+  .button-explore{
+    width: 150px;
+    height: 150px;
+  }
+  .page-text__img-box-planet{
+    margin-bottom: 20px;
+    img{
+      width: 170px;
+      height: 170px;
+    }
+  }
+  .list-tab-nav__item:not(:last-child){
+    margin-right: 26px;
+  }
+  .title--destination{
+    font-size: 56px;
+    margin-bottom: 10px;
+  }
+  .planet-description-list{
+    flex-direction: column;
+
+  }
+  .planet-description-list__item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+  .page-text__img-box{
+    border-bottom: 1px solid #383B4B;
+    margin-bottom: 32px;
+    img{
+      width: 300px;
+      height: 300px;
+    }
+  }
+  .page-text--crew{
+    flex-direction: column-reverse;
+  }
+  .wrapper-page__crew{
+    align-items: center;
+  }
+  .page-text__subtitle--crew{
+    font-size: 16px;
+  }
+  .title--crew{
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+  .technology-list__button{
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  .title--technology{
+    font-size: 24px;
+    margin-bottom: 22px;
+  }
+}

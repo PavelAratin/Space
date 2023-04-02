@@ -1,0 +1,33 @@
+.button-explore{
+  display: block;
+  width: 274px;
+  height: 274px;
+  background-color: $mainColorTextWhite;
+  color: $blackColor2;
+  font-family: 'Bellefair',sans-serif;
+  font-size: 32px;
+  letter-spacing: 2px;
+  border: 0;
+  border-radius: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  &::after{
+    content: '';
+    position: absolute;
+    width: 130%;
+    height: 130%;
+    display: block;
+    top: 50%;
+    left: 50%;
+    border-radius: 100%;
+    transform: translate(-50%,-50%) scale(0);
+    background-color: $mainColorTextWhite;
+    opacity: 0.1;
+    z-index: 1;
+    transition: all 0.2s linear;
+  }
+  &:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+  }
+}
